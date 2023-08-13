@@ -1,0 +1,1333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+    scroll-behavior: smooth;
+}
+h1,h2{
+    font-weight: 700;
+    color: black;
+    font-size: 7.7rem;
+}
+
+
+h3,h4{
+    font-size: 6rem;
+}
+h5,h6{
+    font-size: 5.5rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+}
+li,a{
+    font-family: 'Mate SC', serif;
+    font-size:2rem;
+    list-style: none;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .logo img{
+    width: 150px;
+    height: 100px;
+    border-radius: 0;
+}
+nav{
+    width:20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#menu{
+    font-size: 3rem;
+    display: none;
+    cursor: pointer;
+}
+
+input{
+    display: none;
+}
+.navlist a li:hover,.navlist a li.active{
+    color: white;
+    transition: .4s linear;
+}
+.navlist a li{
+    transition: .4s linear;
+    padding-block: 1.2rem;
+    font-weight: 700;
+   color: black;
+}
+.navlist{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 2rem;
+
+}
+.wrapper{
+    width: 80%;
+    
+    margin-left: 20%;
+}
+.hero .btn .btn2{
+    margin-left: 2em;
+}
+.hero p{
+    color: black;
+    margin-block: 1rem;
+}
+.hero .btn{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.hero .btn .btn1 a ,.btn2 a{
+    color: white;
+}
+.hero .btn .btn2:hover{
+    background-color: rgb(230, 160, 68);
+}
+.hero .btn .btn1:hover{
+    background-color:rgb(230, 160, 68);
+    transition: .4s ease;
+    border: 1px solid white;
+}
+.hero .btn .btn2{
+    width: 160px;
+    transition: .4s ease;
+    height: 50px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+.hero .btn .btn1{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    transition: .4s ease;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+.hero h1{
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    border-bottom: 15px solid brown;
+    overflow: hidden;
+    background-image:linear-gradient(rgba(222, 184, 135,.6),rgba(222, 184, 135,.6)),url(../Images/herobackground.jpg);
+    background-position: center top ;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.hero h1,.hero p,.hero .btn{
+    width: 70%;
+    margin-left: 3%;
+}
+.hero .fixed h6{
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 3.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+.fixed img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 5rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -15%;
+    right: 35%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 10px solid #a52a2a;
+}
+.hero .fixed .btn a li{
+    padding:  1rem ;
+    color: white;
+    
+}
+
+
+.hero .fixed .btn:hover{
+    background-color:rgb(230, 160, 68);
+    transition: .4s linear;
+}
+.hero .fixed .btn{
+    display: flex;
+    transition: .4s linear;
+    justify-content: center;
+    width: 45%;
+    background-color: brown;
+    border-radius: 20px;
+   margin-left: 5rem;
+   margin-block:  1.5rem;
+}
+.hero .fixed{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -7%;
+    bottom: -9%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    border: 10px solid brown;
+    border-radius: 50%;
+}
+/* ---------our story section-------- */
+.story{
+    height: 160vh;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../Images/barber-customer-giving-high-five.jpg);
+    background-repeat: no-repeat;
+    background-position: center top ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    
+    
+}
+.story .discount li{
+    width: 300px;
+    height: 45px;
+   border-radius: 20px;
+   line-height: 45px;
+   text-align: center;
+   background-color: rgb(230, 160, 68);
+}
+.story .discount p{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.story .discount h3{
+    color: brown;
+    padding-inline: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.story .discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    flex-flow: column;
+
+}
+
+
+
+
+
+.our-story{
+    padding-inline: 3%;
+    background-color: white;
+    height: 120vh;
+}
+.our-story .barber h5{
+    color: rgb(101, 2, 2);
+}
+.our-story .barber{
+    width: 100%;
+    height:70vh ;
+    padding-right: 3%;
+    
+}
+.our-story .barber .barber-info{
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    margin-top: 3rem;
+    margin-inline: 3%;
+    justify-content: space-between;
+}
+
+.savy span,.sam span{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    transition: .3s linear;
+    border-radius: 25px;
+    transform: scale(.9);
+    /* z-index: -1; */
+    background-color:rgb(230, 160, 68) ;
+}
+
+.savy:hover span,.sam:hover span{
+    transform: scale(1);
+    transition: .3s linear;
+    background:linear-gradient(to right,rgb(230, 160, 68),#87dedd);
+}
+
+.savy .info .social img,.sam .info .social img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(230, 160, 68);
+    cursor: pointer;
+}
+.savy .info p,.sam .info p{
+    font-family: 'Teko', sans-serif;
+    
+    color: gray;
+}
+.savy .info,.sam .info{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    position: absolute;
+    bottom: 10%;
+    z-index: 10;
+    left: 10%;
+    background-color: white;
+    color: gray;
+    border-radius: 20px;
+    transition: .3s linear;
+    outline: none;
+}
+.savy:hover .info,.sam:hover .info{
+    transform: translateY(-10px);
+    transition: .3s linear;
+}
+
+.savy,.sam{
+    width: 45%;
+    top: 0;
+    
+    position: relative;
+    
+    z-index: 3;
+}
+.savy:hover .pic ,.sam:hover .pic{
+    transform:scale(1)rotate(10deg);
+    transition: .3s linear;
+}
+.savy .pic ,.sam .pic{
+    width: 100%;
+    transition: .3s linear;
+    height: 50vh;
+    transform: scale(.9)rotate(10deg);
+    z-index: 2;
+    border-radius: 25px;
+    position: relative;
+    /* transform: rotate(10deg); */
+    /* border: 21px solid green; */
+}
+
+
+
+.our-story .para p{
+    margin-top: 1rem;
+}
+.our-story .para{
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 1.5rem;
+    border-bottom: 2px solid lightgray;
+}
+
+
+
+/* ----------service section----------- */
+.service-section{
+    width: 100%;
+    height: 110vh;
+    padding-inline: 3%;
+    
+}
+.service-section .ser h4{
+    margin-top: 4rem;
+}
+
+
+.services .service1,.service2,.service3,.service4{
+    height: 35vh;
+    width: 50%;
+    
+    
+}
+.services .service1 .service-name:hover img,.service2 .service-name:hover img,.service3 .service-name:hover img,.service4 .service-name:hover img{
+    transform: scale(1.1);
+    transition: all .3s linear;
+}
+.services .service1 .service-name:hover .name,.service2 .service-name:hover .name,.service3 .service-name:hover .name,.service4 .service-name:hover .name{
+    border:5px solid rgb(230, 160, 68);
+    transition: all .3s linear;
+}
+.services .service1 .service-name,.service2 .service-name,.service3 .service-name,.service4 .service-name{
+    height: 35vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    width: 90%;
+
+}
+.service1 .name p,.service2 .name p,.service3 .name p ,.service4 .name p{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transform: scale(.8);
+    background-color:rgb(230, 160, 68);
+    color: black;
+}
+.services .service1 .service-name .name ,.service2 .service-name .name,.service3 .service-name .name,.service4 .service-name .name{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-radius: 40px;
+    transform: scale(.9);
+    padding-inline: 2rem;
+    padding-bottom: 1rem;
+    transition: all .3s linear;
+    border: 2px solid white;
+    color: rgb(230, 160, 68);
+}
+
+
+.services h6{
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+.services{
+    width: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80vh;
+    margin-top: 3rem;
+}
+
+
+.services .service1 img,.service2 img,.service3 img,.service4 img{
+    width: 100%;
+    height: 35vh;
+    border-radius: 40px;
+    transition: all .3s linear;
+  
+    
+}
+
+/* ---------booking section------------- */
+.booking-section{
+    height: 140vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../Images/pexels-cottonbro-studio-3993133\ -\ Copy.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.booking p{
+
+    text-align: center;
+}
+.booking h3{
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+.booking{
+    width: 80%;
+    display: flex;
+    height: 120vh;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: 20px;
+    background-color: white;
+}
+form{
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+    display: inline-block;
+    padding-inline: 3rem;
+    
+}
+form .bbform:hover{
+    background-color:#91bef3;
+    border: none;
+    transition: .3s linear;
+}
+
+
+form .bbform:focus{
+    background-color:#d7e5f6;
+    outline: 3px solid slateblue;
+    transition: .1s linear;
+    border: none;
+}
+
+form .bbform{
+    transition: .3s linear;
+    color: gray;
+    width: 45%;
+    font-size: 2.5rem;
+    height: 60px;
+    font-family: 'Teko', sans-serif;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 4rem;
+    margin-inline: 1.5rem;
+    padding:1rem ;
+}
+
+
+
+#text:focus{
+    background-color:#d7e5f6;
+    outline: 3px solid slateblue;
+    transition: .1s linear;
+    border: none;
+
+}
+#text:hover{
+    background-color:#91bef3;
+    transition: .3s linear;
+    border: none;
+    
+}
+#text{
+    width: 93%;
+    transition: .3s linear;
+    margin-block: 4rem;
+    margin-inline: 2rem;
+    font-family: 'Teko', sans-serif;
+    border-radius: 10px;
+    height: 90px;
+    color: gray;
+    padding: .5rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+}
+.btn button:hover{
+    background-color:rgb(230, 160, 68) ;
+    transition: .3s linear;
+}
+.btn button{
+    width: 180px;
+    height: 50px;
+    transition: .3s linear;
+    outline: none;
+    font-family: 'Teko', sans-serif;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: brown;
+    font-size: 2.5rem;
+    padding-inline: 2rem;
+}
+
+
+
+
+
+
+/* ---------pricelist-section-------- */
+.pricelist{
+    height: 100vh;
+    margin-inline: 3%;
+}
+.items-list{
+    height: 90vh;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.leftside ul{
+    padding-block: 1rem;
+}
+.leftside ul li{
+    font-size: 3rem;
+    padding-block: .5rem;
+}
+.leftside .item{
+    display: flex;
+    justify-content: space-between;
+}
+.leftside{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    justify-content: center;
+    height: 60vh;
+}
+
+.rightside{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightside span{
+    width: 100%;
+    position: absolute;
+    height: 50vh;
+    z-index: -1;
+    background-color:rgb(230, 160, 68);
+    border-radius: 20px;
+    transform: rotate(0deg);
+}
+.rightside  .img:hover {
+    transition: .3s linear;
+    transform: scale(1);
+}
+.rightside .img:hover span{
+    background:linear-gradient(to right,rgb(230, 160, 68),#87dedd);
+}
+.rightside  .img {
+    height: 50vh;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .3s linear;
+    transform: scale(.9);
+    
+}
+.rightside  .img img{
+    width: 100%;
+    height: 50vh;
+    z-index: 2;
+    border-radius: 20px;
+    transform: rotate(10deg);
+}
+
+/* --------contact section------ */
+.contact-section{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+.contact-section .cont .right .rightcont span{
+    width: 100%;
+    height: 35vh;
+    padding: 3rem;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    border-radius: 20px;
+    z-index:-1;
+    position: absolute;
+    transform: rotate(10deg);
+}
+.contact-section .cont .right .rightcont h6,.rightcont li{
+    transform: rotate(0);
+    text-transform: capitalize;
+} 
+.contact-section .cont .right .rightcont .fa-house{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid white;
+    background-color: rgb(230, 160, 68);
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+.contact-section .cont .right .rightcont{
+    width: 90%;
+    height: 35vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color:rgb(230, 160, 68);
+    flex-flow: column;
+    padding: 3rem;
+    transform: rotate(0deg);
+
+}
+
+.contact-section .cont .right{
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-section .cont .left a{
+    margin-bottom: 1rem;
+    color: brown;
+}
+.contact-section .cont .right h6{
+    color: white;
+    font-size: 3rem;
+
+}
+.contact-section .cont .right li{
+
+    margin-block:1rem;
+}
+.contact-section .cont .left h5{
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section .cont .left{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 50%;
+    height: 45vh;
+}
+.contact-section .cont{
+    margin-left: 3%;
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    
+}
+.sayhello{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: rgb(219, 233, 238);
+}
+
+/* ------------branches section-------- */
+.branches{
+    margin-inline: 3%;
+    height: 50vh;
+}
+
+.branches .bran .branches1 h6,.branches2 h6,.branches3 h6{
+    color: brown;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.branches .bran .branches1,.branches2,.branches3{
+    width: 30%;
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+.branches .bran{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    height: 35vh;
+    
+}
+.copyright .rightcopy,.leftcopy{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    margin-top: 3rem;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+   
+}
+.copyright .leftcopy a i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid brown;
+    color: brown;
+}
+.copyright .leftcopy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media (max-width:1200px){
+   html{
+    font-size: 60%;
+   }
+    .hero .fixed h6{
+        margin-top: 4%;
+        font-size: 2.5rem;
+    }
+    .hero .fixed{
+        bottom: -5%;
+        right: -9%;
+        width: 350px;
+        height: 350px;
+    }
+    .fixed img{
+        width: 100px;
+        height: 100px;
+    }
+    .story{
+        height: 245vh;
+    }
+    .our-story{
+        height: 200vh;
+    }
+    .our-story .barber .barber-info{
+        flex-direction: column;
+        height: 115vh;
+        margin-top: 10rem;
+        align-items: center;
+    }
+    .savy,.sam{
+        width: 90%;
+    }
+
+    
+    .story .discount{
+        height: 40vh;
+    }
+    
+    .booking{
+        height: 120vh;
+    }
+    .service-section{
+        height: 220vh;
+    }
+    .services{
+        height: 180vh;
+        flex-direction: column;
+    }
+    .services .service1,.service2,.service3,.service4{
+        width: 100%;
+        height: 40vh;
+
+    }
+    .services .service1 .service-name,.service2 .service-name,.service3 .service-name,.service4 .service-name{
+        height: 40vh;
+        width: 100%;
+    }
+    .services .service1 img,.service2 img,.service3 img,.service4 img{
+        height: 40vh;
+    }
+    .services .service1 .service-name .name ,.service2 .service-name .name,.service3 .service-name .name,.service4 .service-name .name{
+        height: 40vh;
+    }
+
+
+
+
+
+
+    
+    form .bbform{
+    width: 43%;
+    border: 1px solid black;
+    }
+    #text{
+        width: 90%;
+    }
+
+    .leftside ul li{
+        font-size: 3rem;
+
+    }
+    .contact-section .cont .left,.right{
+        height: 60vh;
+        width: 50%;
+    }
+
+    .contact-section .cont{
+        margin-left: 0;
+        padding-inline: 3%;
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media (max-width:900px){
+    html{
+        font-size: 58%;
+    }
+    .hero .fixed{
+        width: 300px;
+        height: 300px;
+    }
+    .our-story .para{
+        height: 55vh;
+    }
+   
+    .booking{
+        height: 120vh;
+    }
+    .leftside ul li{
+        font-size: 2.5rem;
+        padding-block: .5rem;
+    }
+    .branches .bran{
+        height: 20vh;
+    }
+    .copyright{
+        height: 30vh;
+        align-items: end;
+    }
+
+
+
+}
+@media (max-width:768px){
+    html{
+        font-size: 52%;
+
+    }
+    h1{
+        font-size: 5rem;
+    }
+    nav .logo img{
+        width: 100px;
+
+    }
+
+    .hero .fixed{
+        width: 280px;
+        height: 280px;
+    }
+    .branches{
+        height: 60vh;
+    }
+    .branches .bran{
+        height: 30vh;
+    }
+
+    .branches .bran .branches1,.branches2,.branches3{
+        width: 90%;
+    }
+
+
+    .branches .bran{
+        flex-direction: column;
+    }
+    
+    .booking{
+        height: 110vh;
+        width: 90%;
+
+    }
+    .pricelist{
+        height: 120vh;
+    }
+    .items-list{
+        flex-direction: column;
+        height: 120vh;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .rightside{
+        width: 100%;
+        
+    }
+    .rightside  .img {
+        width: 90%;
+    }  
+
+
+}
+
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+    nav .logo img{
+        width: 70px;
+        height: 30px;
+        border-radius: 0;
+    }
+    .navlist a li{
+        font-size: 3rem;
+        padding: 2rem;
+        color: #a52a2a;
+    }
+    #menu{
+        display: block;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 3rem;
+    }
+    .navlist a li{
+        width: 100%;
+    }
+    
+    /*  */
+    .navlist{
+        position: absolute;
+        top:60px ;
+        margin: 0;
+        left: 0;
+        top: -60vh;
+        padding: 1rem;
+        z-index: -1;
+        height: 60vh;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color:  rgb(230, 160, 68);
+        transition: .3s ease-in;
+    }
+    .active{
+        top: 60px;
+        transition: .3s ease-in;
+    }
+    
+  
+    .wrapper{
+        width: 100%;
+        margin: 0;
+    }
+    label .fa-bars{
+        font-size: 3rem;
+        display: block;
+        cursor: pointer;
+    }
+    .hero .fixed{
+        width: 280px;
+        height: 280px;
+        right: -15%;
+        border: 7px solid brown;
+    }
+    .our-story .barber .barber-info{
+        flex-direction: column;
+        height: 110vh;
+        margin-top: 10rem;
+        align-items: center;
+    }
+    
+
+    .booking p{
+        font-size: 2.5rem;
+    }
+    .booking{
+        height: 100vh;
+    }
+    form .bbform{
+        width: 43%;
+        height: 50px;
+        border-radius: 10px;
+        
+        display: inline-block;
+    }
+    #text{
+        width: 90%;
+    }
+
+
+
+    .service-section .ser{
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+    }
+    .rightside .img{
+        width: 80%;
+    }
+    .sayhello{
+        height: 30vh;
+        margin-top: 6rem;
+    }
+    .branches .bran{
+        height: 30vh;
+    }
+    .copyright .leftcopy a i{
+        width: 40px;
+        height: 40px;
+       
+
+}
+}
+
+@media (max-width:480px){
+    html{
+        font-size: 48%;
+    }
+    h4{
+        text-align: left;
+        font-size: 5rem;
+    }
+    h5{
+        font-size: 4rem;
+    }
+    .hero .fixed{
+        width: 250px;
+        height: 250px;
+        right: -15%;
+        border: 7px solid brown;
+    }
+    .fixed img{
+        width: 70px;
+        height: 70px;
+        border: 7px solid brown;
+    }
+
+    .story{
+        height: 220vh;
+    }
+    .our-story{
+        height: 180vh;
+    }
+    .our-story .para{
+        height: 65vh;
+    }
+   
+
+    .story .discount li{
+        width: 200px;
+    }
+    .story .discount h3{
+        font-size: 4rem;
+    }
+    .our-story .barber .barber-info{
+        flex-direction: column;
+        height: 90vh;
+        margin-top: 10rem;
+        align-items: center;
+    }
+    .savy span,.sam span,.savy .pic ,.sam .pic{
+        height: 40vh;
+    }
+    .pricelist{
+        height: 100vh;
+    }
+    .items-list{
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .rightside .img{
+        width: 70%;
+        height: 40vh;
+    }
+    .rightside .img img{
+        height: 40vh;
+    }
+    .rightside span{
+        height: 40vh;
+    }
+    .rightside{
+        height: 45vh;
+    }
+    .booking-section{
+        height: 140vh;
+    }
+    .booking{
+        height: 120vh;
+    }
+    form{
+        width: 100%;
+        display: block;
+    }
+    form .bbform{
+        height: 40px;
+        display: block;
+        width: 90%;
+        margin-top: 3rem;
+
+    }
+    #text{
+        height: 70px;
+        margin-block: 3rem;
+
+        width: 90%;
+    }
+
+    .branches .bran{
+        height: 40vh;
+    }
+    .contact-section{
+        height: 120vh;
+    }
+
+    
+
+    .contact-section .cont{
+        margin-left: 0;
+        padding-inline: 3%;
+        width: 100%;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .contact-section .cont .left,.contact-section .cont .right{
+        width: 100%;
+        height: 40vh;
+    }
+    .sayhello{
+        height: 100vh;
+        margin-top: 6rem;
+    }
+    .contact-section .cont .right .rightcont{
+        width: 80%;
+        height: 30vh;
+    }
+    .contact-section .cont .right .rightcont span{
+        height: 30vh;
+    }
+
+    
+
+
+    .branches .bran{
+        height: 40vh;
+    }
+    .copyright{
+        align-items: center;
+    }
+    .copyright  .leftcopy a li{
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+@media (max-width:360px){
+    html{
+        font-size: 40%;
+    }
+    h1{
+        text-align: left;
+        font-size: 5rem;
+    }
+    h5{
+        font-size: 3rem;
+    }
+    .hero .fixed{
+        width: 250px;
+        height: 250px;
+        right: -25%;
+        border: 7px solid brown;
+    }
+    .our-story .para{
+        height: 60vh;
+    }
+    .booking-section{
+        height: 120vh;
+    }
+    .booking{
+        height: 105vh;
+    }
+    form .bbform{
+        height: 40px;
+    }
+    .leftside h1{
+        font-size: 5rem;
+    }
+    .btn{
+        margin-top: 2rem;
+    }
+    .btn button{
+        width: 120px;
+        font-size: 2.5rem;
+        border-radius: 10px;
+        padding-inline: 1rem;
+    }
+
+
+
+
+    .copyright{
+        width: 100%;
+    }
+    .copyright.leftcopy{
+        width: 20%;
+        justify-content: end;
+    }
+    .rightcopy{
+        width: 90%;
+    }
+
+}
+
+
+
